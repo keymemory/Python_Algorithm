@@ -30,6 +30,8 @@ result = 0
 for i in range(n):
     for j in range(m):
         # 현재 위치에서 DFS 수행
+        # 처음 방문하여 처리가 된 좌료라면 +1 처리
+        # 해당 노드와 연결된 노드 전부 방문처리
         if dfs(i, j) == True:
             result += 1
 
