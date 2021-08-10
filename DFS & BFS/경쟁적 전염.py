@@ -28,7 +28,7 @@ dy = [0, 1, 0, -1]
 
 # 너비 우선 탐색(BFS) 진행
 while q:
-    virus, s, x, y = q.popleft()
+    virus, s, x, y = q.popleft() # 바이러스 종류, 초, 행, 열 --> data.append((graph[i][j], 0, i, j))
     # 정확히 s초가 지나거나, 큐가 빌 때까지 반복
     if s == target_s:
         break
