@@ -19,6 +19,7 @@ for i in range(n):
 data.sort()
 q = deque(data)
 
+# s초 후에 x행, y열에 존재하는 바이러스의 종류
 target_s, target_x, target_y = map(int, input().split())
 
 # 바이러스가 퍼져나갈 수 있는 4가지 위치
@@ -31,7 +32,7 @@ while q:
     # 정확히 s초가 지나거나, 큐가 빌 때까지 반복
     if s == target_s:
         break
-    # 현재 노드에서 주변 4가지 위치를 각각 확인
+    # 현재 노드에서 주변 4가지 위치를 각각 확인(사방으로 전염)
     for i in range(4):
         nx = x + dx[i]
         ny = y + dy[i]
