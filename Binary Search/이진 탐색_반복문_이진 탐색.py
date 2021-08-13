@@ -19,6 +19,7 @@ n, target = list(map(int, input().split()))
 # 전체 원소 입력받기
 array = list(map(int, input().split()))
 
+
 # 이진 탐색 수행 결과 출력
 result = binary_search(array, target, 0, n - 1)
 if result == None:
